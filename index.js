@@ -1,9 +1,18 @@
+readJSON('data.json', function(error, manifest){
+ 
+    manifest.name
+    // => 'read-json'
+ 
+
+})
+
+
 var fs = require("fs");
 
 // calling lodash
 var _ = require('lodash');
 
-var contents = fs.readFileSync("data.json");
+var items = fs.readFileSync("data.json");
 
 var jsonData = JSON.parse(contents);
 items = jsonData.items;
